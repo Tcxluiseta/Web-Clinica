@@ -1,0 +1,541 @@
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+header{
+    width: 100%;
+    background-color:rgb(3, 218, 218) ;
+    height: 70px;
+    position: relative;
+}
+
+.container-topo{
+    display: flex;
+    justify-content: center;
+}
+
+
+.container-topo a img{
+    width: 120px;
+    position:absolute;
+    left: 290px;
+    top: 6px;
+}
+.container-topo .links-topo a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+   
+}
+
+.links-topo{
+    display: flex;
+    gap: 70px;
+    position: absolute;
+    right: 300px;
+    top: 23px;
+}
+
+.clinica-apresenta{
+    background-image: url(img/recepcao.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 620px;
+    width: 100vw;
+
+    
+}
+
+.clinica-apresenta {
+    min-width: 1024px;
+    position: relative;
+}
+
+.clinica-h1{
+   font-size: 27px;
+   color: #fff ;
+   
+}
+.clinica-h1 h1{
+    font-weight: 500;
+    position: absolute;
+    top: 190px;
+    left: 197px;
+
+}
+
+.sobre{
+    
+    width: 100%;
+    align-items: center;
+    text-align: center;
+     position: relative;
+     
+   
+   
+}
+
+.about-clinica{
+    align-items: center;
+    text-align: center;
+    
+}
+
+.about-clinica h2{
+    color: #757373;
+     font-weight: bold;
+     margin-top: 40px;
+     margin-bottom: 20px;
+
+}
+
+.about-clinica p{
+    color: #585656;
+    font-size: 17px;
+    margin-bottom: 30px;}
+    
+.sobre-geral{
+    align-items: center;
+}
+.lista-info{
+    display: flex;
+    justify-content: center;
+    
+}
+.lista-info ul{
+    text-align: left;
+    margin-top: 80px;
+    margin-left: 30px;
+}
+
+.lista-info h2{
+    font-weight: 500;
+    color: #585656;
+    font-size: 20px;
+    position: absolute;
+    top: 170px;
+    right: 400px;
+}
+
+.ortopedia-e-etc{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.ortopedia-e-etc h2{
+    font-size: 23px;
+    color: #585656;
+}
+
+.ortopedia-e-etc p{
+    margin-top: 10px;
+    color: #757373;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.cards{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.cards div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: -5px 10px 22px 1px rgba(0,0,0,0.75);
+    transition: 0.5s ;
+    cursor: pointer;
+}
+
+.cards div:hover{
+    transform:scale(1.09);
+}
+.cards div img{
+    width: 300px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.cards div p{
+    font-size: 18px;
+    margin-top: 2px;
+    padding: 13px;
+    color: #585656;
+}
+
+.contato{
+    margin-top: 98px;
+    text-align: center;
+    align-items: center;
+}
+
+.contato h2{
+    margin-top: 30px;
+    color: #757373;
+    font-size: 23px;
+}
+.contato p{
+    color: #585656;
+    font-weight:500 ;
+    margin-top: 14px;
+}
+.contato div{
+    margin-bottom: 40px;
+}
+.contato strong{
+    color: #434040;
+}
+
+.ver-horarios{
+    text-decoration: none;
+    background-color: rgb(22, 149, 149);
+    color: #fff;
+    padding: 15px;
+    font-size: 19px;
+    font-weight: 600;
+    border-radius: 8px;
+    
+}
+
+iframe{
+    width: 1000px;
+
+}
+
+footer{
+    background-color: rgb(42, 128, 128);
+    align-items: center;
+    text-align: center;
+    height: 200px;
+    margin-top:40px;
+   
+}
+
+footer img{
+   width: 
+   140px;
+}
+
+footer p{
+    color: #fff;
+    margin-top: 15px;
+}
+
+footer div{
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+/* Responsive Styles */
+
+@media (max-width: 425px) {
+  header {
+    height: auto;
+  }
+
+  .container-topo {
+    position: static;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .container-topo a img {
+    position: static;
+    width: 160px;
+    margin-top: 10px;
+  }
+  .container-topo div {
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid rgb(42, 40, 40);
+  }
+
+  .links-topo {
+    position: static;
+    margin-bottom: 20px;
+    gap: 50px;
+    text-align: center;
+    
+  }
+ 
+
+  .clinica-apresenta {
+    background-size: contain;
+    height: 400px;
+    min-width: unset;
+  }
+
+  .clinica-h1 h1 {
+    font-size: 25px;
+    left: 20px;
+    top: 50px;
+  }
+
+  .sobre-geral,
+  .lista-info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-clinica{
+    text-align: center;
+    height: auto;
+    padding: 17px;
+    
+  }
+  .about-clinica h2{
+    margin-top: -190px;
+  }
+  .about-clinica p .quebra{
+    display: none;
+    
+    
+  }
+  .quebra{
+    display: none;
+  }
+
+  .about-clinica p{
+    font-size: 17px;
+    
+  }
+
+  .lista-info {
+    flex-direction: column;
+  }
+  .lista-info img{
+    display: none;
+  }
+
+  .lista-info h2 {
+    position: static;
+    margin-top: -50px;
+    margin-bottom: -60px;
+  }
+  .ortopedia-e-etc{
+    padding: 30px;
+    margin-bottom: -60px;
+    margin-top: -5px;
+  }
+
+  .cards {
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px;
+  }
+
+  .cards div img {
+    width: 100%;
+  }
+  
+  .contato{
+    margin-top: 10px;
+  }
+
+.contato h2 {
+    font-size: 19px;
+  }
+.contato div{
+    padding: 7px;
+}
+  iframe {
+    width: 100%;
+  }
+
+  footer {
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  footer img {
+    width: 100px;
+  }
+}
+
+
+
+
+
+
+/*segundo media query*/
+
+@media (min-width: 426px) and (max-width: 768px) {
+  header {
+    height: auto;
+  }
+
+  .container-topo {
+    position: static;
+    justify-content: space-around ;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .container-topo a img {
+    position: static;
+    width: 100px;
+    margin-top: 10px;
+  }
+  .container-topo div {
+    text-align: center;
+    
+    
+    
+  }
+
+  .links-topo {
+    position: static;
+    gap: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+    
+  }
+ 
+
+  .clinica-apresenta {
+    background-size: contain;
+    height: 400px;
+    min-width: unset;
+  }
+
+  .clinica-h1 h1 {
+    font-size: 35px;
+    left: 20px;
+    top: 120px;
+  }
+
+  .sobre{
+    margin-top: 150px;
+    width: 100%;
+  }
+
+  .sobre-geral,
+  .lista-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-clinica{
+    text-align: center;
+    height: auto;
+    padding:10px;
+    
+  }
+  .about-clinica h2{
+    margin-top: -190px;
+  }
+  .quebra{
+    display: none;
+  }
+
+  .about-clinica p{
+    font-size: 18px;
+    margin-right: 30px;
+    
+  }
+
+  .lista-info {
+    flex-direction: column;
+    margin-top: -20px;
+    margin-bottom: 20px;
+  }
+  .lista-info img{
+    display: none;
+  }
+
+  .lista-info h2 {
+    position: static;
+    margin-top: -50px;
+    margin-bottom: -60px;
+  }
+  .ortopedia-e-etc{
+    padding: 0px 50px 0px 50px;
+        text-align: center  ;   
+  }
+
+  .ortopedia-e-etc p{
+    font-size:20px
+  }
+   
+  
+  .cards {
+   display: flex;
+   flex-wrap: wrap;
+   padding:20px;
+   margin-right:30px;
+  }
+  .cards div{
+    width: 300px
+  }
+
+  .cards div img {
+    width: 100%;
+  }
+  
+  .contato{
+    margin-top: 20px;
+    margin-right: 25px;
+  }
+
+.contato h2 {
+    font-size: 19px;
+  }
+.contato div{
+    padding: 20px;
+}
+  iframe {
+    width: 100vw;
+  }
+
+  footer {
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  footer img {
+    width: 100px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
